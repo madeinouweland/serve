@@ -30,7 +30,7 @@ class Handler(BaseHTTPRequestHandler):
                 exit()
             print(f"{path} not found")
 
-def start_server():
+def main():
     httpd = HTTPServer((address, port), Handler)
     print(f"--=*> Starting server at {address}:{port} <*=--")
     print(f"Opening index.html from local directory: {website_directory}.")
@@ -41,4 +41,4 @@ def start_server():
         print("\nServer stopped")
 
 if __name__ == '__main__':
-    start_server()
+    main()

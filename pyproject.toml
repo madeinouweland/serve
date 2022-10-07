@@ -4,4 +4,7 @@ version = "0.0.3"
 dependencies = []
 
 [project.scripts]
-serve = "serve:main"
+serve = "serve.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

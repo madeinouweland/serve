@@ -14,3 +14,7 @@ Go to the folder that contains pyproject.toml and execute:
 Go to a folder in the Terminal that contains index.html and execute:
 
 ```serve```
+
+# Uninstall
+
+pip uninstall serve
