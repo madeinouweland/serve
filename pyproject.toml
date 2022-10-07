@@ -1,0 +1,7 @@
+[project]
+name = "serve"
+version = "0.0.3"
+dependencies = []
+
+[project.scripts]
+serve = "serve:main"
