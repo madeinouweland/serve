@@ -5,7 +5,7 @@ Does not inject code into your pages and cannot auto refresh. After changing you
 
 # Create pip package
 
-Go to the folde that contains pyproject.toml and execute:
+Go to the folder that contains pyproject.toml and execute:
 
 ```pip install .```
 
