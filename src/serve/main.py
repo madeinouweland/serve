@@ -29,7 +29,7 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
             return
 
-        path = website_directory + unquote_plus(self.path)
+        path = website_directory + unquote_plus(self.path)  # unquote unescapes urls to actual characters so it can be loaded by Python
         if path.endswith("/"):
             path += "index.html"
 
