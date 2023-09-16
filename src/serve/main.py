@@ -15,6 +15,8 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Content-type", "image/jpeg")
         if extension == "png":
             self.send_header("Content-type", "image/png")
+        if extension == "svg":
+            self.send_header("Content-type", "image/svg+xml")
         self.end_headers()
         self.wfile.write(response)
 
