@@ -15,6 +15,12 @@ Go to a folder in the Terminal that contains index.html and execute:
 
 ```serve```
 
+# Install
+
+in folder with pyproject.toml:
+
+pip install .
+
 # Uninstall
 
 pip uninstall serve
