@@ -25,7 +25,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path.endswith("/favicon.ico"):
             self.send_response(200)
             self.send_header("Content-Type", "image/x-icon")
-            self.send_header("Content-Length", 0)
+            self.send_header("Content-Length", "0")
             self.end_headers()
             return
 
@@ -40,7 +40,7 @@ class Handler(BaseHTTPRequestHandler):
         except UnicodeDecodeError:
             with open(path, "rb") as file2:
                 self.write_response(file2.read(), path.split(".")[-1])
-        except FileNotFoundError as ex:
+        except FileNotFoundError:
             if path.endswith("index.html"):
                 text = "Cannot serve this folder because it does not contain index.html."
                 self.write_response(bytes(text, "utf-8"))
